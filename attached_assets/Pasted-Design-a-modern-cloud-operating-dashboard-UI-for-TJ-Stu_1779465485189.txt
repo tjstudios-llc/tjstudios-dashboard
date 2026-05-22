@@ -1,0 +1,576 @@
+Design a modern cloud operating dashboard UI for TJ Studios.
+
+IMPORTANT:
+This phase is ONLY for:
+
+* designing pages
+* building layouts
+* creating UI components
+* mock dashboards
+* placeholders
+* fake/live-looking data cards
+* frontend interactions
+
+DO NOT:
+
+* build real backend logic
+* connect databases
+* implement real authentication
+* create real API integrations
+* add production infrastructure
+
+Everything should use:
+
+* mock data
+* placeholders
+* simulated metrics
+* fake activity feeds
+* dummy charts
+
+The focus is:
+PREMIUM UI/UX DESIGN.
+
+⸻
+
+Design Inspiration
+
+The dashboard should feel inspired by:
+
+* Vercel
+* Railway
+* Cloudflare Dashboard
+* Portainer
+* Discord Developer Portal
+* Linear
+
+The final UI should feel like:
+
+* futuristic
+* premium
+* enterprise SaaS
+* cloud operating system
+* highly polished
+* responsive
+* animated
+* modern
+
+⸻
+
+Tech Stack
+
+Frontend only:
+
+* Next.js 15
+* TypeScript
+* TailwindCSS
+* shadcn/ui
+* Framer Motion
+* Zustand
+* Lucide Icons
+* Recharts
+* next-themes
+
+NO BACKEND YET.
+
+⸻
+
+Main Dashboard Layout
+
+Design a full-screen dashboard layout.
+
+Structure:
+
+* Collapsible sidebar
+* Floating top navbar
+* Main content area
+* Widget grid system
+* Responsive mobile layout
+
+⸻
+
+Top Navigation Bar
+
+Top navbar should include:
+
+LEFT:
+
+* TJ Studios logo
+* Workspace/team selector
+
+CENTER:
+
+* Global search bar
+* Command palette trigger
+
+RIGHT:
+
+* Create button
+* Notifications icon
+* NEW 9-dot app launcher
+* User profile dropdown
+
+Navbar should:
+
+* stay fixed
+* have glassmorphism blur
+* subtle border
+* smooth animations
+
+⸻
+
+9-Dot App Launcher
+
+This is a major UI feature.
+
+Add a Google-style 9-dot launcher button beside the profile avatar.
+
+When clicked:
+
+* open animated floating panel
+* blurred/glass background
+* responsive grid layout
+* app search input
+* favorite apps
+* recent apps
+* hover animations
+
+Apps inside launcher:
+
+1. Dashboard
+2. Storage
+3. Deployments
+4. Bot Manager
+5. API Manager
+6. Databases
+7. Docker
+8. Analytics
+9. Domains
+10. Logs
+11. Templates
+12. Marketplace
+13. Monitoring
+14. Team Settings
+15. Server Status
+
+Each app card should include:
+
+* icon
+* title
+* short description
+* fake online status
+* hover glow
+* animated interactions
+
+IMPORTANT:
+Routes can be placeholders only.
+
+⸻
+
+Sidebar Navigation
+
+Design a premium animated sidebar.
+
+Sections:
+
+* Overview
+* Projects
+* Deployments
+* Docker
+* Storage
+* Databases
+* Analytics
+* Monitoring
+* Domains
+* Team
+* Billing
+* Settings
+
+Features:
+
+* collapsible mode
+* animated active states
+* hover expansion
+* mobile drawer mode
+* smooth transitions
+
+⸻
+
+Dashboard Homepage
+
+Create a beautiful homepage overview.
+
+Add widgets/cards for:
+
+* CPU Usage
+* RAM Usage
+* Storage Usage
+* Active Deployments
+* Online Bots
+* API Requests
+* Docker Containers
+* Team Activity
+* Domains Connected
+* Recent Logs
+* Uptime Monitoring
+* Alerts Feed
+
+IMPORTANT:
+Use FAKE real-time data.
+
+Examples:
+
+* animated percentages
+* random fluctuating values
+* fake server statuses
+* simulated activity feed
+* loading shimmer effects
+
+DO NOT connect real APIs.
+
+⸻
+
+Charts & Analytics
+
+Use Recharts to create:
+
+* line graphs
+* bar charts
+* pie charts
+* activity heatmaps
+* deployment timelines
+
+Data should:
+
+* look realistic
+* animate smoothly
+* update with mock intervals
+
+⸻
+
+Docker Management Page
+
+Design a Docker management UI inspired by Portainer.
+
+Include:
+
+* container cards
+* status indicators
+* CPU/RAM usage bars
+* fake logs viewer
+* deployment activity
+* start/restart/stop buttons (UI only)
+
+Everything should be frontend placeholders.
+
+⸻
+
+Storage Management Page
+
+Design a cloud storage interface inspired by:
+
+* Google Drive
+* Dropbox
+
+Include:
+
+* folder grid
+* file cards
+* upload zone
+* storage usage widget
+* drag/drop UI
+* preview panel
+
+Use mock files and folders.
+
+⸻
+
+Database Management Page
+
+Create database overview pages.
+
+Database cards:
+
+* PostgreSQL
+* MySQL
+* Redis
+* MongoDB
+
+Each should show:
+
+* fake storage usage
+* active connections
+* health indicators
+* backup timestamps
+* query activity graphs
+
+Mock only.
+
+⸻
+
+Deployment Page
+
+Create a deployment management UI.
+
+Include:
+
+* deployment timeline
+* build status
+* commit cards
+* branch deployments
+* deployment logs
+* environment variable panel
+
+Statuses:
+
+* building
+* deployed
+* failed
+* queued
+
+Use animated placeholders.
+
+⸻
+
+Monitoring System
+
+Design monitoring pages.
+
+Include:
+
+* uptime widgets
+* incident timeline
+* service health cards
+* latency graphs
+* alert notifications
+
+Statuses:
+
+* green
+* yellow
+* red
+
+All fake/simulated.
+
+⸻
+
+Team Workspace System
+
+Design:
+
+* workspace switching UI
+* team cards
+* invite modal
+* member list
+* permissions page
+
+Use fake teams/users.
+
+⸻
+
+Command Palette
+
+Build a floating command palette similar to:
+
+* Linear
+* Raycast
+* Vercel
+
+Features:
+
+* quick search
+* navigation
+* app launching
+* fake commands
+* keyboard-first UI
+
+Shortcut:
+
+* CMD+K
+
+UI only.
+
+⸻
+
+Notifications Panel
+
+Design a modern notifications dropdown.
+
+Include:
+
+* deployment updates
+* server warnings
+* invites
+* logs
+* alerts
+
+Features:
+
+* unread counts
+* categories
+* timestamps
+* smooth animations
+
+Mock notifications only.
+
+⸻
+
+Mobile Design
+
+Mobile experience should feel native.
+
+Add:
+
+* bottom dock nav
+* mobile sidebar drawer
+* responsive app launcher
+* touch-friendly controls
+* swipe animations
+
+⸻
+
+Theme System
+
+Implement:
+
+* dark mode
+* light mode
+* system theme
+
+Visual direction:
+
+* subtle gradients
+* layered transparency
+* blur effects
+* neon highlights
+* modern enterprise styling
+
+DO NOT overdo effects.
+
+Maintain readability.
+
+⸻
+
+Animations
+
+Use Framer Motion for:
+
+* launcher animations
+* sidebar transitions
+* hover effects
+* modal transitions
+* loading states
+* widget updates
+
+Animations should feel:
+
+* smooth
+* premium
+* modern
+
+NOT:
+
+* slow
+* distracting
+* overly flashy
+
+⸻
+
+Placeholder Data System
+
+Create a centralized mock data system.
+
+Generate:
+
+* fake deployments
+* fake containers
+* fake logs
+* fake notifications
+* fake analytics
+* fake activity feeds
+
+Use:
+
+* timestamps
+* realistic names
+* believable usage numbers
+
+Example:
+
+* “api.tjstudios.xyz deployed successfully”
+* “Docker container restarted”
+* “High RAM usage detected”
+* “Storage nearing quota”
+
+⸻
+
+File Structure
+
+Use clean scalable architecture:
+
+src/
+├── app/
+├── components/
+│   ├── launcher/
+│   ├── dashboard/
+│   ├── charts/
+│   ├── docker/
+│   ├── storage/
+│   ├── deployments/
+│   ├── monitoring/
+│   ├── analytics/
+│   ├── databases/
+│   ├── navigation/
+│   ├── modals/
+│   └── ui/
+├── stores/
+├── hooks/
+├── lib/
+├── mock/
+├── types/
+├── config/
+└── styles/
+
+Design Rules
+
+DO:
+
+* build reusable components
+* create scalable layouts
+* use responsive design
+* add polished interactions
+* create premium SaaS visuals
+
+DO NOT:
+
+* use bootstrap styling
+* use generic admin templates
+* overcrowd the UI
+* use plain placeholder lorem ipsum everywhere
+
+⸻
+
+Deliverables
+
+Generate:
+
+1. Complete dashboard UI
+2. Responsive layouts
+3. 9-dot app launcher
+4. Sidebar system
+5. Command palette
+6. Dashboard widgets
+7. Charts and graphs
+8. Docker UI
+9. Storage UI
+10. Deployment UI
+11. Monitoring UI
+12. Team UI
+13. Notifications UI
+14. Mobile layouts
+15. Dark/light themes
+16. Mock data system
+17. Smooth animations
+18. Premium SaaS styling
+
+IMPORTANT:
+Everything should LOOK production-ready while still using mock data/placeholders only.
