@@ -16,6 +16,18 @@ import Team from "./pages/team";
 import Domains from "./pages/domains";
 import Billing from "./pages/billing";
 import Settings from "./pages/settings";
+import Workspaces from "./pages/workspaces";
+import Wizard from "./pages/wizard";
+import Templates from "./pages/templates";
+import ContainerDetail from "./pages/container-detail";
+import Files from "./pages/files";
+import AuditLogs from "./pages/audit";
+import ApiKeys from "./pages/api-keys";
+import Terminals from "./pages/terminals";
+import EnvVars from "./pages/env";
+import Nodes from "./pages/nodes";
+import Notifications from "./pages/notifications";
+import Profile from "./pages/profile";
 import NotFound from "./pages/not-found";
 
 const queryClient = new QueryClient();
@@ -35,6 +47,20 @@ function Router() {
         <Route path="/domains" component={Domains} />
         <Route path="/billing" component={Billing} />
         <Route path="/settings" component={Settings} />
+        
+        <Route path="/workspaces" component={Workspaces} />
+        <Route path="/wizard" component={Wizard} />
+        <Route path="/templates" component={Templates} />
+        <Route path="/containers/:id" component={ContainerDetail} />
+        <Route path="/files" component={Files} />
+        <Route path="/audit" component={AuditLogs} />
+        <Route path="/api-keys" component={ApiKeys} />
+        <Route path="/terminals" component={Terminals} />
+        <Route path="/env" component={EnvVars} />
+        <Route path="/nodes" component={Nodes} />
+        <Route path="/notifications" component={Notifications} />
+        <Route path="/profile" component={Profile} />
+
         <Route component={NotFound} />
       </Switch>
     </Shell>

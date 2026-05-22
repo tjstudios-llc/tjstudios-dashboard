@@ -7,7 +7,8 @@ import {
   LayoutDashboard, Server, Database, HardDrive, 
   Activity, BarChart3, Users, Globe, CreditCard, 
   Settings, Search, Bell, Grid, Moon, Sun,
-  Menu, X
+  Menu, X, Code2, LayoutTemplate, FolderOpen, ScrollText,
+  Key, Terminal, Lock, Network, UserCircle, Wand2
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -22,13 +23,24 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const navItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard },
     { name: 'Deployments', path: '/deployments', icon: Server },
+    { name: 'Workspaces', path: '/workspaces', icon: Code2 },
+    { name: 'Wizard', path: '/wizard', icon: Wand2 },
+    { name: 'Templates', path: '/templates', icon: LayoutTemplate },
     { name: 'Docker', path: '/docker', icon: Server },
     { name: 'Storage', path: '/storage', icon: HardDrive },
+    { name: 'Files', path: '/files', icon: FolderOpen },
     { name: 'Databases', path: '/databases', icon: Database },
     { name: 'Monitoring', path: '/monitoring', icon: Activity },
     { name: 'Analytics', path: '/analytics', icon: BarChart3 },
     { name: 'Domains', path: '/domains', icon: Globe },
+    { name: 'Nodes', path: '/nodes', icon: Network },
+    { name: 'Audit', path: '/audit', icon: ScrollText },
+    { name: 'Terminals', path: '/terminals', icon: Terminal },
+    { name: 'API Keys', path: '/api-keys', icon: Key },
+    { name: 'Env Vars', path: '/env', icon: Lock },
+    { name: 'Notifications', path: '/notifications', icon: Bell },
     { name: 'Team', path: '/team', icon: Users },
+    { name: 'Profile', path: '/profile', icon: UserCircle },
     { name: 'Billing', path: '/billing', icon: CreditCard },
     { name: 'Settings', path: '/settings', icon: Settings },
   ];

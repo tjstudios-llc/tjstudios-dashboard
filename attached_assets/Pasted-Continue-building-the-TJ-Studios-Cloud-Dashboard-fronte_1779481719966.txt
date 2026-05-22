@@ -1,0 +1,395 @@
+Continue building the TJ Studios Cloud Dashboard frontend.
+
+The base shell, theme, layout, Zustand store, charts, sidebar, navbar, and the following pages are already completed:
+- Dashboard
+- Deployments
+- Docker
+- Storage
+- Databases
+- Monitoring
+- Analytics
+- Team
+- Domains
+- Billing
+- Settings
+
+DO NOT rebuild existing pages.
+DO NOT change the existing visual identity.
+DO NOT remove existing animations, layouts, or theme styling.
+
+Continue using:
+- Next.js 15 App Router
+- TypeScript
+- TailwindCSS
+- shadcn/ui
+- Zustand
+- Framer Motion
+- Recharts
+- Lucide Icons
+
+Maintain the existing:
+- dark navy theme
+- electric blue accent system
+- glassmorphism effects
+- Inter + JetBrains Mono typography
+- responsive mobile dock
+- animated sidebar
+- command palette support
+- premium infrastructure dashboard aesthetic
+
+==================================================
+NEW PAGES TO BUILD
+==================================================
+
+Build the following missing pages and fully integrate them into navigation, routing, mock data, and responsive layouts.
+
+==================================================
+1. WORKSPACES PAGE
+==================================================
+
+This is the MOST IMPORTANT new page.
+
+Create a cloud IDE/workspace UI similar to:
+- Replit
+- VS Code
+- GitHub Codespaces
+
+Layout:
+------------------------------------------------
+Sidebar | File Explorer | Monaco Editor
+         |               |
+         |               |
+         |---------------|
+         | Terminal      |
+------------------------------------------------
+
+Features:
+- Monaco Editor integration
+- syntax highlighting
+- editor tabs
+- file explorer tree
+- resizable panels
+- terminal UI using xterm.js
+- environment variables drawer
+- logs drawer
+- Git panel
+- fake live collaboration indicators
+- fake deployment status
+- fake runtime status
+- responsive layout
+
+Create realistic mock data:
+- folders
+- TypeScript files
+- Dockerfiles
+- Prisma schema
+- package.json
+- logs
+- fake terminals
+
+Add smooth animations and panel transitions.
+
+==================================================
+2. PROJECT CREATION WIZARD
+==================================================
+
+Create a multi-step wizard/modal flow for creating new projects.
+
+Steps:
+1. Choose Template
+2. Configure Project
+3. Choose Database
+4. Environment Variables
+5. Domain Setup
+6. Deployment Review
+
+Templates:
+- Next.js App
+- Express API
+- Discord Bot
+- Fullstack App
+- Static Website
+- Python Service
+- PostgreSQL Database
+
+Each template should include:
+- icon
+- description
+- estimated resources
+- runtime type
+
+Add animated transitions between steps.
+
+==================================================
+3. TEMPLATES MARKETPLACE PAGE
+==================================================
+
+Create a visual marketplace page for deployable templates.
+
+Sections:
+- Featured Templates
+- Recently Added
+- Popular
+- Community Templates
+
+Cards should include:
+- preview image placeholders
+- tech stack badges
+- deploy button
+- author
+- downloads
+- stars
+- category tags
+
+Add:
+- search
+- filters
+- category sidebar
+- sorting dropdown
+
+Design should feel like:
+- Vercel templates
+- ThemeForest
+- Railway templates
+
+==================================================
+4. CONTAINER DETAIL PAGE
+==================================================
+
+Create an advanced container detail page.
+
+Include:
+- live CPU/RAM charts
+- container logs viewer
+- restart/rebuild buttons
+- health indicators
+- mounted volumes
+- environment variables
+- network info
+- port mappings
+- uptime stats
+- recent events timeline
+
+Add tabs:
+- Overview
+- Logs
+- Metrics
+- Files
+- Environment
+- Networking
+
+==================================================
+5. FILE MANAGER PAGE
+==================================================
+
+Build a dedicated visual file manager.
+
+Features:
+- folder tree
+- grid/list view toggle
+- drag/drop uploads
+- image preview
+- archive preview
+- breadcrumbs
+- permissions badges
+- storage usage bar
+- quick actions
+- context menus
+
+Add mock files:
+- images
+- configs
+- source code
+- logs
+- backups
+
+==================================================
+6. ACTIVITY & AUDIT LOGS PAGE
+==================================================
+
+Create a professional audit/activity system.
+
+Include:
+- deployment events
+- login history
+- container restarts
+- file edits
+- environment changes
+- user actions
+
+Features:
+- filter system
+- severity badges
+- timestamps
+- expandable event details
+- searchable logs
+- activity timeline
+
+==================================================
+7. API KEYS & TOKENS PAGE
+==================================================
+
+Create a developer API management page.
+
+Features:
+- generate API key modal
+- token permissions
+- expiration dates
+- usage charts
+- copy/revoke buttons
+- webhook secrets
+- OAuth integrations
+
+Add:
+- GitHub integration card
+- Discord integration card
+- Google integration card
+
+==================================================
+8. TERMINAL MANAGEMENT PAGE
+==================================================
+
+Build a standalone terminal/session manager.
+
+Features:
+- active shell sessions
+- SSH session cards
+- runtime stats
+- command history
+- session reconnect
+- multiple terminals
+- split terminal layouts
+- fake live command streams
+
+==================================================
+9. ENVIRONMENT VARIABLES PAGE
+==================================================
+
+Create a dedicated secrets/env management UI.
+
+Features:
+- encrypted variable placeholders
+- environment selection
+- staging/production/dev tabs
+- bulk import
+- secret masking
+- audit history
+- validation status
+- search/filter
+
+==================================================
+10. SERVER NODES PAGE
+==================================================
+
+Create infrastructure node management.
+
+Include:
+- server cards
+- online/offline status
+- resource usage
+- region labels
+- Docker version
+- uptime
+- workload distribution
+- deployment targets
+
+Add visual cluster topology section.
+
+==================================================
+11. NOTIFICATIONS CENTER PAGE
+==================================================
+
+Build a centralized notification center.
+
+Notification types:
+- deployments
+- billing
+- runtime alerts
+- storage warnings
+- domain expirations
+- team activity
+
+Features:
+- read/unread
+- grouped notifications
+- filtering
+- priorities
+- expandable details
+
+==================================================
+12. USER PROFILE PAGE
+==================================================
+
+Create a modern developer profile/settings page.
+
+Include:
+- avatar
+- activity overview
+- recent deployments
+- linked accounts
+- SSH keys
+- preferences
+- appearance settings
+- connected devices
+- active sessions
+
+==================================================
+GLOBAL REQUIREMENTS
+==================================================
+
+All new pages must:
+- use existing layout system
+- integrate with Zustand store
+- use realistic mock data
+- be fully responsive
+- include loading states
+- include empty states
+- include hover animations
+- support dark mode
+- match the premium visual identity
+
+==================================================
+ADVANCED UX FEATURES
+==================================================
+
+Add:
+- command palette actions
+- keyboard shortcuts
+- hover tooltips
+- loading skeletons
+- contextual action menus
+- animated modals
+- smooth page transitions
+- dock interactions
+- micro animations
+
+==================================================
+ROUTING
+==================================================
+
+Generate and connect all routes properly using Next.js App Router.
+
+==================================================
+CODE QUALITY
+==================================================
+
+Generate:
+- production-grade TypeScript
+- modular reusable components
+- scalable architecture
+- proper typing
+- clean hooks
+- reusable utility functions
+- maintainable folder structure
+
+==================================================
+FINAL RESULT
+==================================================
+
+The completed frontend should feel like:
+- a premium developer cloud platform
+- a self-hosted PaaS
+- a real infrastructure management system
+- a production-grade cloud IDE ecosystem
+
+The UI should look launch-ready even while using mock data.
