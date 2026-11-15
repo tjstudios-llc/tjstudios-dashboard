@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'wouter';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,17 +8,16 @@ import {
   Activity, BarChart3, Users, Globe, CreditCard, 
   Settings, Search, Bell, Grid, Moon, Sun,
   Menu, X, Code2, LayoutTemplate, FolderOpen, ScrollText,
-  Key, Terminal, Lock, Network, UserCircle, Wand2
+  Key, Terminal, Lock, Network, UserCircle, Wand2, AlertCircle
 } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { mockNotifications } from '@/mock/data';
 
 export default function Shell({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const { theme, setTheme } = useTheme();
-  const { ui, toggleSidebar, setAppLauncherOpen, setNotificationsOpen, setCommandPaletteOpen } = useDashboardStore();
+  const { ui, toggleSidebar } = useDashboardStore();
   
   const navItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard },
@@ -102,11 +101,11 @@ export default function Shell({ children }: { children: React.ReactNode }) {
 
           <div className="flex-1 max-w-md mx-4">
             <div 
-              className="flex items-center gap-2 px-3 py-1.5 bg-muted rounded-md border border-border cursor-pointer hover:border-primary/50 transition-colors"
-              onClick={() => setCommandPaletteOpen(true)}
+              className="flex items-center gap-2 px-3 py-1.5 bg-muted rounded-md border border-border cursor-not-allowed opacity-70"
+              
             >
               <Search className="w-4 h-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground flex-1">Search or jump to...</span>
+              <span className="text-sm text-muted-foreground flex-1">Search is not connected</span>
               <kbd className="hidden sm:inline-flex items-center gap-1 px-1.5 rounded border border-border bg-background text-[10px] font-medium text-muted-foreground">
                 <span className="text-xs">⌘</span>K
               </kbd>
@@ -119,25 +118,29 @@ export default function Shell({ children }: { children: React.ReactNode }) {
             </Button>
             
             <div className="relative">
-              <Button variant="ghost" size="icon" onClick={() => setNotificationsOpen(!ui.notificationsOpen)}>
+              <Button variant="ghost" size="icon" disabled>
                 <Bell className="w-5 h-5" />
-                <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary animate-pulse" />
               </Button>
             </div>
             
-            <Button variant="ghost" size="icon" onClick={() => setAppLauncherOpen(!ui.appLauncherOpen)}>
+            <Button variant="ghost" size="icon" disabled>
               <Grid className="w-5 h-5" />
             </Button>
             
             <Avatar className="w-8 h-8 ml-2 cursor-pointer border border-border hover:border-primary transition-colors">
               <AvatarImage src="" />
-              <AvatarFallback className="bg-primary/20 text-primary text-xs">AC</AvatarFallback>
+              <AvatarFallback className="bg-primary/20 text-primary text-xs">TJ</AvatarFallback>
             </Avatar>
           </div>
         </header>
 
         {/* Page Content */}
         <main className="flex-1 overflow-y-auto p-4 md:p-6 pb-24 md:pb-6 relative z-10">
+          <div className="mb-4 flex flex-wrap items-center gap-2 rounded-md border border-amber-500/30 bg-amber-500/5 px-3 py-2 text-sm text-muted-foreground">
+            <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 dark:text-amber-400" />
+            <Badge variant="outline">Prototype</Badge>
+            <span>Live API integrations, authentication, and management actions are not connected. Operational data is intentionally blank.</span>
+          </div>
           <AnimatePresence mode="wait">
             <motion.div
               key={location}
